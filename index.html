@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolls</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-lg-flex">
+            <div class="w-100 me-auto">
+                <div class="con-xs">
+                    <p class="text-center text-uppercase fw-bold text-muted h5">Dice Roller</p>
+                    <div class="input-group justify-content-center d-flex mb-4">
+                        <input type="text" class="cinput fw-bold" placeholder="Dice Amount" value="4" name="dice_count" />
+                        <button class="roll-dice" type="button">Roll</button>
+                    </div>
+                </div>
+                <div class="main-container d-flex flex-column flex-sm-row align-items-center justify-content-center"></div>
+                <div class="d-flex align-items-center justify-content-center mb-5">
+                    <div class="total-count"></div>
+                </div>
+            </div>
+            <div class="results-container ps-lg-3">
+                <h5 class="text-nowrap text-uppercase fw-bold mb-3">Rolled Results</h5>
+                <div class="display-results"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
