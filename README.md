@@ -1,2 +1,2 @@
 # DnD-Stats-Roller
-Rolling stat dice with 4d6's with an option of rerolling the second lowest die.
+Rolling stat dice with d6's and rerolling the second lowest die.
