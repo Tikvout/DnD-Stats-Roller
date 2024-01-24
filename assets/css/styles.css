@@ -1,3 +1,6 @@
+:root {
+    --primaryColor: #e92e3d;
+}
 @keyframes backgroundColorPalette {
     0% { background: #ee6055; }
     33% { background: #cd2e22; }
@@ -22,7 +25,7 @@
     position: absolute;
     left: 20px;
     line-height: 85px;
-    border: 3px solid #e92e3d;
+    border: 3px solid var(--primaryColor);
     border-radius: 10px;
     animation: backgroundColorPalette 1s infinite linear;
     color: #fff;
@@ -37,7 +40,7 @@
 
 .roll-dice, .cbtn {
     background: transparent;
-    border: 2px solid #e92e3d;
+    border: 2px solid var(--primaryColor);
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
     transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -48,7 +51,7 @@
     font-weight: bold;
 }
 .roll-dice:hover, .cbtn:hover {
-    background: #e92e3d;
+    background: var(--primaryColor);
     color: #fff;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     transition:.3s;
@@ -67,7 +70,7 @@
     line-height: 150px;
     text-align: center;
     color: #fff;
-    background: #e92e3d;
+    background: var(--primaryColor);
     border-radius: 50%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -76,7 +79,29 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #e92e3d;
+    background: var(--primaryColor);
     font-weight: bold;
     margin-bottom: .5rem;
+}
+.roll-msg {
+    background: var(--primaryColor);
+    padding: 0.25rem 0.75rem;
+    font-size: .9rem;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 500px;
+}
+.result-message {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+}
+.result-message-success { background: #198754; }
+.result-message-danger { background: #dc3545; }
+.result-message-standard {
+    background: #fff;
+    color: #333;
 }
