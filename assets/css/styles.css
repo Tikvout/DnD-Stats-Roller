@@ -1,6 +1,4 @@
-:root {
-    --primaryColor: #e92e3d;
-}
+:root { --primaryColor: #e92e3d; }
 @keyframes backgroundColorPalette {
     0% { background: #ee6055; }
     33% { background: #cd2e22; }
@@ -76,6 +74,7 @@
 }
 .results-container { width: 250px; }
 .results-container .result {
+    color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -83,6 +82,7 @@
     font-weight: bold;
 }
 .roll-msg {
+    color: #fff;
     background: var(--primaryColor);
     padding: 0.25rem 0.75rem;
     font-size: .9rem;
@@ -101,6 +101,6 @@
 .result-message-success { background: #198754; }
 .result-message-danger { background: #dc3545; }
 .result-message-standard {
-    background: #fff;
+    background: #e5e5e5;
     color: #333;
 }
