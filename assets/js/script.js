@@ -133,7 +133,7 @@ function calculateTotal($rerolledTotal=false) {
             // check if the specific result div exists for the rolled result
             if($(`#rolledResult${rollResultsCounter}Number`).length == 0) {
                 // append the number to the results list
-                let content = `<div class="d-flex align-items-center">
+                let content = `<div class="d-flex align-items-center mb-2">
                     <div id="rolledResult${rollResultsCounter}Number" class="result d-flex justify-content-center align-items-center">${totalRolled}</div>
                     <div id="rolledResult${rollResultsCounter}Message"></div>
                 </div>`
