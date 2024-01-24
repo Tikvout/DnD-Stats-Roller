@@ -138,21 +138,6 @@ function calculateTotal($rerolledTotal=false) {
                     <div id="rolledResult${rollResultsCounter}Message"></div>
                 </div>`
                 $('.display-results').append(content);
-
-                // // check if the specific result div exists for the rolled result
-                // if($(`#rolledResult${rollResultsCounter}`).length == 0) {
-                //     // append the number to the results list
-                //     let content = `<div class="d-flex justify-content-center align-items-center">
-                //         <div id="rolledResult${rollResultsCounter}Number" class="result d-flex justify-content-center align-items-center">${totalRolled}</div>
-                //         <div id="rolledResult${rollResultsCounter}Message" class="d-flex justify-content-center align-items-center"></div>
-                //     </div>`
-                //     $('.display-results').append(content);
-                // } else {
-                //     let totalRolledDiff = '+1';
-                //     // update the result
-                //     $(`#rolledResult${rollResultsCounter}Number`).text(totalRolled);
-                //     $(`#rolledResult${rollResultsCounter}Message`).html(`<span class="result-msg">${totalRolledDiff}</span>`);
-                // }
             } else {
                 let rollDifference     = (preRerollTotal) ? totalRolled - preRerollTotal : 0,
                     rollDiffCls        = (rollDifference > 0) ? 'success' : (rollDifference < 0 ? 'danger' : 'standard'),
@@ -161,12 +146,7 @@ function calculateTotal($rerolledTotal=false) {
                 $(`#rolledResult${rollResultsCounter}Number`).text(totalRolled);
                 $(`#rolledResult${rollResultsCounter}Message`).html(totalRolledMessage);
             }
-
             displayGeneralMessage();
-            console.log('--------')
-            console.log('Initial Total: ' + totalRolled)
-            if (preRerollTotal)
-                console.log('Pre-Reroll Total: ' + preRerollTotal)
         }
     )
 }
