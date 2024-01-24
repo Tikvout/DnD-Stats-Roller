@@ -72,15 +72,6 @@
     border-radius: 50%;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.results-container { width: 250px; }
-.results-container .result {
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--primaryColor);
-    font-weight: bold;
-}
 .roll-msg {
     color: #fff;
     background: var(--primaryColor);
@@ -89,18 +80,30 @@
     border-radius: 10px;
     display: inline-block;
     max-width: 500px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.result-message {
+.results-container { width: 250px; }
+.results-container .result {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primaryColor);
+    font-weight: bold;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.results-container .result-message {
     font-size: .75rem;
     font-weight: bold;
     margin-left: 5px;
     color: #fff;
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
-.result-message-success { background: #198754; }
-.result-message-danger { background: #dc3545; }
-.result-message-standard {
+.results-container .result-message-success { background: #198754; }
+.results-container .result-message-danger { background: #dc3545; }
+.results-container .result-message-standard {
     background: #e5e5e5;
     color: #333;
 }
